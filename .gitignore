@@ -14,9 +14,6 @@ build/
 venv/
 env/
 
-# Data & Models (large files)
-data/*.csv
-models/*.pkl
 
 # Streamlit
 .streamlit/secrets.toml
