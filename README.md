@@ -2,7 +2,7 @@
 
 Aplikasi forecasting harga saham IDX menggunakan model **SARIMA** dan **Prophet** dengan ensemble prediction.
 
-link apps : https://share.streamlit.io/
+link apps : https://stockforecast-y36.streamlit.app/
 ---
 
 ##  Struktur Proyek
