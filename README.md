@@ -1,10 +1,11 @@
-# 📈 StockSARIMA × Prophet
+# StockSARIMA × Prophet
 
 Aplikasi forecasting harga saham IDX menggunakan model **SARIMA** dan **Prophet** dengan ensemble prediction.
 
+link apps : https://share.streamlit.io/
 ---
 
-## 🗂️ Struktur Proyek
+##  Struktur Proyek
 
 ```
 stock-forecasting/
@@ -54,18 +55,6 @@ python train.py "ANTM - PT Aneka Tambang Tbk"
 - **Ensemble** weighted average (configurable)
 - **Sinyal trading** BUY / SELL / HOLD per model
 - **Metrics** MAE, RMSE, MAPE yang akurat
-
----
-
-## 🛡️ Fix Utama
-
-| Masalah | Solusi |
-|---|---|
-| SARIMA overflow (`e+29`) | Training pada `log1p`, inverse `expm1`, drift clamp |
-| Hanya 1 ticker didownload | `data_pipeline.py` dinamis per ticker |
-| Model tidak tersimpan per ticker | Disimpan sebagai `models/{ticker}_sarima.pkl` |
-| Ensemble rusak | NaN-aware weighted average |
-| MAE/RMSE sangat besar | Alignment index yang benar |
 
 ---
 
